@@ -50,7 +50,7 @@ namespace UserManagementPortal.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<Person>> EditPerson(int id, Person person)
+        public async Task<ActionResult> EditPerson(int id, Person person)
         {
             if (id != person.Id)
             {
